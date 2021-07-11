@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    padding: auto;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+}
+#login-area {
+    display: inline-flex;
+    width: 40vw;
+    height: 100vh;
+    background-color: #4E5BEE;
+}
+input {
+    width: 19vw;
+    background-color: transparent;
+    border: 2px solid #F8F8F8;
+    border-radius: 20px;
+}
+.email {
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    top: 50vh;
+    left: 8vw;
+}
+.senha {
+    margin-top: 15px;
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    top: 55vh;
+    left: 8vw;
+}
+.entrar {
+    cursor: pointer;
+    margin-top: 30px;
+    color: black;
+    background-color: white;
+    padding: 10px 100px 10px 100px;
+    position: absolute;
+    top: 60vh;
+    left: 9.5vw;
+}
+input::placeholder {
+    color: white;
+    font-weight: 900;
+}
+.logo img{
+    position: absolute;
+    width: 11vw;
+    left: 17vw;
+    transform: translate(-25%);
+    top: 20vh;
+}
+#other {
+    position: absolute;
+    left: 100vh;
+    display: inline;
+    width: 50vw;
+    height: 100vh;
+    
+}
+#other img {
+    right: 120px;
+    top: 20vh;
+    position: absolute;
+    width: 50vw;
+}
+
+@media (max-width: 420px) {
+    #other {
+        width: 0;
+        height: 0;
+        display: block;
+        visibility: hidden;
+    }
+
+    #other img {
+        width: 0;
+        visibility: hidden;
+    }
+    #login-area {
+        display: inline-flex;
+        width:100vw;
+        height: 100vh;
+        background-color: #4E5BEE;
+    }
+
+    input {
+        background-color: transparent;
+        border: 2px solid #F8F8F8;
+        border-radius: 20px;
+    }
+    .email {
+        padding: 10px 50px 10px 50px;
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%);
+    }
+    .senha {
+        margin-top: 20px;
+        padding: 10px 50px 10px 50px;
+        position: absolute;
+        top: 54vh;
+        left: 50vw;
+        transform: translate(-50%);
+    }
+    .entrar {
+        margin-top: 40px;
+        padding: 20px;   
+        position: absolute;
+        top: 58vh;
+        left: 50vw;
+        transform: translate(-50%);
+    }
+
+    .logo img {
+        width: 50vw;
+        left: 50vw;
+        transform: translate(-50%);
+    }
+}
